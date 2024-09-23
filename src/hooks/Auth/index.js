@@ -26,7 +26,8 @@ export function AuthProvider({children}) {
                 autenticated: false,
                 user: null,
                 role: null,
-            })
+            });
+            throw new Error("Falha ao logar");
         }
 
         setUser({
